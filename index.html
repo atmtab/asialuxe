@@ -5,80 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AsiaLuxe</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-box">
-            <div class="nav-container">
-                <img src="images/logo-5a70f3df.svg" alt="Логотип" class="logo">
-                <ul class="links">
-                    <li><a href="#">Вакансии</a></li>
-                    <li><a href="#">Поддержка</a></li>
-                    <li><a href="#">Агентствам</a></li>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="#" class="navbar-brand"><img src="images/logo-5a70f3df.svg" alt=""></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="" class="nav-link">Lorem.</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Suscipit!</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Neque.</a></li>
                 </ul>
-            </div>
-            <div class="icons">
-                <div class="icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_428_10)">
-                        <path d="M12 15C16.9706 15 21 13.6569 21 12C21 10.3431 16.9706 9 12 9C7.02944 9 3 10.3431 3 12C3 13.6569 7.02944 15 12 15Z" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M12 3V21" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M21 13V11C21 6.58172 17.4183 3 13 3H11C6.58172 3 3 6.58172 3 11V13C3 17.4183 6.58172 21 11 21H13C17.4183 21 21 17.4183 21 13Z" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_428_10">
-                        <rect width="24" height="24" fill="white"/>
-                        </clipPath>
-                        </defs>
-                        </svg>
-                    <span>Русский</span>
-                </div>
-                <div class="icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.99398 13V9C5.99398 5.686 8.68298 3 12 3C15.317 3 18.006 5.686 18.006 9V13C18.006 13.986 18.454 14.919 19.223 15.537L19.532 15.785C20.449 16.521 19.928 18 18.752 18H5.24798C4.07198 18 3.55098 16.521 4.46798 15.785L4.77698 15.537C5.54698 14.919 5.99398 13.986 5.99398 13Z" fill="#3392FF"/>
-                        <path d="M10.5 21H13.5" stroke="#3392FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    <span>Войти</span>
+                <div class="d-flex me-2">
+                    <a href="#" class="nav-link me-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_428_10)">
+                            <path d="M12 15C16.9706 15 21 13.6569 21 12C21 10.3431 16.9706 9 12 9C7.02944 9 3 10.3431 3 12C3 13.6569 7.02944 15 12 15Z" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 3V21" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 13V11C21 6.58172 17.4183 3 13 3H11C6.58172 3 3 6.58172 3 11V13C3 17.4183 6.58172 21 11 21H13C17.4183 21 21 17.4183 21 13Z" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_428_10">
+                            <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        <span>Русский</span>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <div class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.99398 13V9C5.99398 5.686 8.68298 3 12 3C15.317 3 18.006 5.686 18.006 9V13C18.006 13.986 18.454 14.919 19.223 15.537L19.532 15.785C20.449 16.521 19.928 18 18.752 18H5.24798C4.07198 18 3.55098 16.521 4.46798 15.785L4.77698 15.537C5.54698 14.919 5.99398 13.986 5.99398 13Z" fill="#3392FF"/>
+                                <path d="M10.5 21H13.5" stroke="#3392FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Войти</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
-    <main class="main">
-        <div class="action">
-            <div class="action-text">
-                <div class="plane">
-                    <img src="free-icon-plane-2641597 1.png" alt="">
-                </div>
+    <main class="container">
+        <div class="alert alert-primary d-flex my-5 align-items-center justify-content-between container">
+            <div>
+                <img src="images/free-icon-plane-2641597 1.png" alt="">
                 <span>Покупать билеты удобнее в приложении</span>
             </div>
-            <a href="#" class="app-link">В приложение AsiaLuxe</a>
+            <a href="#" class="btn btn-outline-primary me-2">В приложение AsiaLuxe</a>
         </div>
-        <h1 class="main-header">
+        <h1 class="main-header mt-5">
             Ваше путешествие начинается <span>здесь</span>
         </h1>
-        <h3 class="secondary-header">
+        <h3 class="secondary-header mb-5">
             Авиабилеты с кэшбеком до 10%
         </h3>
-        <div class="form">
-            <ul class="form-nav">
+        <div class="form container">
+            <ul class="form-nav justify-content-evenly container">
                 <li class="form-nav-item">Отели</li>
                 <li class="form-nav-item">Авиабилеты</li>
                 <li class="form-nav-item">Чартеры</li>
                 <li class="form-nav-item">Туры</li>
             </ul>
-            <ul class="form-subnav">
+            <ul class="form-subnav d-flex container-sm no-gutters mt-5 align-items-center">
                 <li class="subnav-item">Туда-обратно</li>
                 <li class="subnav-item">В одну сторону</li>
-                <li class="subnav-item">Несколько гороов</li>
-                <li>
+                <li class="subnav-item">Несколько городов</li>
+                <li class="col-lg-2 col-md-6 col-12 mt-3" style="position: relative; bottom: 0.7rem;">
                     <select class="dropdown">
                         <option value="economy">Эконом</option>
                         <option value="business">Бизнес</option>
                     </select>
                 </li>
             </ul>
-            <div class="inputs">
-                <div class="input-container">
+            
+            <div class="inputs row no-gutters container d-flex">
+                <div class="input-container mt-4 col-sm-6" style="width: 20%;">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_428_75)">
                         <path d="M12 13C10.343 13 9 11.657 9 10C9 8.343 10.343 7 12 7C13.657 7 15 8.343 15 10C15 11.657 13.657 13 12 13Z" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -92,8 +100,25 @@
                         </svg>
                 
                     <input type="text" placeholder="Откуда">
+                    <button class="switch" onclick="swapValues()" style="background-color: white; border-width: 0; position: relative; left: 2rem;">
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.5" width="25" height="25" rx="6.5" fill="#3392FF"/>
+                            <rect x="0.5" y="0.5" width="25" height="25" rx="6.5" stroke="black"/>
+                            <g clip-path="url(#clip0_428_106)">
+                            <path d="M16.0771 12.0948L18.2499 9.92275L16.0771 7.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.75 9.92505H18.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.92275 13.9053L7.75 16.0773L9.92275 18.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.25 16.075H7.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_428_106">
+                            <rect width="18" height="18" fill="white" transform="translate(4 4)"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                    </button>
                 </div>
-                <div class="input-container">
+                <div class="input-container mt-4 col-sm-6" style="width: 20%;">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_428_75)">
                         <path d="M12 13C10.343 13 9 11.657 9 10C9 8.343 10.343 7 12 7C13.657 7 15 8.343 15 10C15 11.657 13.657 13 12 13Z" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -108,7 +133,7 @@
                 
                     <input type="text" placeholder="Куда">
                 </div>
-                <div class="input-container">
+                <div class="input-container mt-4 col-sm-6" style="width: 20%;">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_428_89)">
                         <path d="M16 2V6" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -125,11 +150,9 @@
                         </clipPath>
                         </defs>
                         </svg>
-                        
-                
                     <input type="text" placeholder="Даты">
                 </div>
-                <div class="input-container">
+                <div class="input-container mt-4 col-sm-6" style="width: 20%;">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_428_101)">
                         <path d="M16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11C14.2091 11 16 9.20914 16 7Z" stroke="#323232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -141,64 +164,87 @@
                         </clipPath>
                         </defs>
                         </svg>
-                        
-                
                     <input type="text" placeholder="Туристы">
                 </div>
-                <button class="search">Найти</button>
+                <button class="search col-lg-2 col-md-2 col-sm-6 mt-4" style="width: 107px;">Найти</button>
             </div>
         </div>
-        <section style="margin-top: 80px; justify-content: space-between;">
-            <div class="worldwide-avia">
+        <section class="container my-5 d-flex justify-content-between row">
+            <div class="worldwide-avia col-lg-7 me-1 mt-1 col-sm-12 col-md-6">
                 <div class="text">
                     <h1 class="ad">АВИАБИЛЕТЫ ПО ВСЕМУ МИРУ</h1>
                     <h3 class="ad">ЛЕТАЙТЕ С ВЫГОДОЙ И КОМФОРТОМ</h3>
                 </div>
                 <div class="images"></div>
             </div>
-            <div class="mobile-app">
+            <div class="mobile-app col-lg-4 me-1 mt-1 col-sm-12 col-md-6">
                 <h1 class="ad">Мобильное приложение</h1>
                 <h3 class="ad">Скидки и акции под рукой</h3>
             </div>
         </section>
-        <section style="display: flex; flex-direction: column;">
-            <h1 class="main-header">Экскурсионные туры</h1>
-            <div class="etours">
-                <img src="images/umra.png" alt="" width="514" height="119">
-                <img src="images/liki.png" alt="" width="523" height="121">
+
+        
+
+        <section class="container">
+            <h1 class="main-header my-5">Экскурсионные туры</h1>
+            <div id="carousel" class="carousel slide container my-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <img src="images/liki.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <img src="images/umra.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-md-6 col-sm-12">
+                            <img src="images/liki.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <img src="images/umra.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev" style="left: -10%;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next" style="right: -10%;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <svg class="next" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.5835 31.3337L27.4168 23.5003L19.5835 15.667" stroke="#313132" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            <svg class="prev" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M27.4165 15.6663L19.5832 23.4997L27.4165 31.333" stroke="#313132" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
                     
                 
         </section>
-        <section style="flex-direction: column;">
-            <h1 class="main-header">Преимущества онлайн-бронирования</h1>
-            <h3 class="secondary-header">Экономьте время и деньги, выбирая лучшее</h3>
-            <div class="cards">
-                <div class="card">
-                    <img src="images/rocket.png" alt="" class="card-image">
+        <section class="container" >
+            <h1 class="main-header mt-5">Преимущества онлайн-бронирования</h1>
+            <h3 class="secondary-header mb-4">Экономьте время и деньги, выбирая лучшее</h3>
+            <div class="cards d-flex justify-content-evenly row">
+                <div class="card col-md-3 col-sm-12 mt-3 p-4" style="width: 30%;">
+                    <img src="images/rocket.png" alt="" class="card-image mt-4" style="width: 58px;">
                     <h1>Быстро и удобно</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero fuga, aliquid consectetur itaque tenetur similique.</p>
                 </div>
-                <div class="card">
-                    <img src="images/shield.png" alt="" class="card-image">
+                <div class="card col-md-3 col-sm-12 mt-3 p-4" style="width: 30%;">
+                    <img src="images/shield.png" alt="" class="card-image mt-4" style="width: 58px;">
                     <h1>Безопасно</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eius obcaecati natus iste deserunt. Eius?</p>
                 </div>
-                <div class="card">
-                    <img src="images/money.png" alt="" class="card-image">
+                <div class="card col-md-3 col-sm-12 mt-3 p-4" style="width: 30%;">
+                    <img src="images/money.png" alt="" class="card-image mt-4" style="width: 58px;">
                     <h1>Выгодно</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic mollitia quis voluptates debitis optio excepturi!</p>
                 </div>
             </div>
         </section>
         <section style="flex-direction: column;">
-            <h1 class="main-header">Эксклюзивные отели <span>AsiaLuxe</span></h1>
+            <h1 class="main-header mt-5">Эксклюзивные отели <span>AsiaLuxe</span></h1>
             <div class="mini-cards">
                 <div class="mini-card">
                     <img src="images/cardpic.png" alt="">
@@ -229,74 +275,74 @@
                 </div>
             </div>
         </section>
-        <section style="flex-direction: column;">
-            <h1 class="main-header">Популярные направления</h1>
-            <div class="gallery">
-                <div class="gallery-item">
+        <section class="container">
+            <h1 class="main-header my-5">Популярные направления</h1>
+            <div class="gallery row no-gutters">
+                <div class="gallery-item col-lg-4 col-md-6 col-xl-3">
                     <img src="images/Rectangle 293.png" alt="">
                     <h4>Саудовская Аравия</h4>
                     <p>Мекка</p>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item col-lg-4 col-md-6 col-xl-3">
                     <img src="images/Rectangle 294.png" alt="">
                     <h4>Анталия</h4>
                     <p>Турция</p>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item col-lg-4 col-md-6 col-xl-3">
                     <img src="images/Rectangle 295.png" alt="">
                     <h4>Бодрум</h4>
                     <p>Турция</p>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item col-lg-4 col-md-6 col-xl-3">
                     <img src="images/Rectangle 296.png" alt="">
                     <h4>Аланья</h4>
                     <p>Турция</p>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item col-lg-4 col-md-6 col-xl-3">
                     <img src="images/Rectangle 297.png" alt="">
                     <h4>Анкара</h4>
                     <p>Турция</p>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item col-lg-4 col-md-6 col-xl-3">
                     <img src="images/Rectangle 298.png" alt="">
                     <h4>Даламан</h4>
                     <p>Турция</p>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item col-lg-4 col-md-6 col-xl-3">
                     <img src="images/Rectangle 299.png" alt="">
                     <h4>Стамбул</h4>
                     <p>Турция</p>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item col-lg-4 col-md-6 col-xl-3">
                     <img src="images/Rectangle 300.png" alt="">
                     <h4>Шарм-эль-Шейх</h4>
                     <p>Египет</p>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item col-lg-4 col-md-6 col-xl-3">
                     <img src="images/Rectangle 301.png" alt="">
                     <h4>Мальдивы</h4>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item col-lg-4 col-md-6 col-xl-3">
                     <img src="images/Rectangle 302.png" alt="">
                     <h4>Пхукет</h4>
                     <p>Таиланд</p>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item col-lg-4 col-md-6 col-xl-3">
                     <img src="images/Rectangle 303.png" alt="">
                     <h4>Дубай</h4>
                     <p>ОАЭ</p>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item col-lg-4 col-md-6 col-xl-3">
                     <img src="images/Rectangle 304.png" alt="">
                     <h4>Бургас</h4>
                     <p>Болгария</p>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item col-lg-4 col-md-6 col-xl-3">
                     <img src="images/Rectangle 305.png" alt="">
                     <h4>Прага</h4>
                     <p>Чехия</p>
                 </div>
-                <div class="gallery-item">
+                <div class="gallery-item col-lg-4 col-md-6 col-xl-3">
                     <img src="images/Rectangle 306.png" alt="">
                     <h4>Тбилиси</h4>
                     <p>Грущия</p>
@@ -305,5 +351,16 @@
             </div>
         </section>
     </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    function swapValues() {
+        const input1 = document.querySelector('input[placeholder="Откуда"]');
+        const input2 = document.querySelector('input[placeholder="Куда"]');
+        
+        const tempValue = input1.value;
+        input1.value = input2.value;
+        input2.value = tempValue;
+    }
+    </script>
 </body>
 </html>

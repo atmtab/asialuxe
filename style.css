@@ -3,8 +3,8 @@
     padding: 0;
 }
 body {
-    font-family: Arial, sans-serif;
-    background: rgb(247, 247, 248);
+    font-family: Montserrat !important;
+    background-color: rgb(247, 247, 248) !important;
 }
 
 .navbar {
@@ -12,99 +12,16 @@ body {
     padding: 0 20px;
     box-sizing: border-box;
     box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.09);
-
 }
-.nav-box {
-    margin: 0 auto;
-    height: 78px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
-}
-
-.logo {
-    height: 31px;
-}
-
-.links {
-    margin-left: 20px;
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-.links li a {
-    text-decoration: none;
-    color: black;
-}
-
-.icons {
-    display: flex;
-    gap: 20px;
-}
-
-.icon {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.nav-container {
-    display: flex;
-    align-items: center;
+.alert {
+    border-radius: 20px !important;
 }
 .main {
     margin: 0 auto;
     width: 1061px;
 }
-.action {
-    margin: 37px auto 0 auto;
-    width: 1061px;
-    height: 60px;
-    top: 115px;
-    left: 173px;
-    gap: 0px;
-    border-radius: 20px;
-    opacity: 0px;
-    display: flex;
-    align-items: center;
-    background: rgba(51, 146, 255, 0.15);
-    justify-content: space-between;
-}
-.action-text {
-    display: flex;
-    align-items: center;
-}
-.plane {
-    margin-left: 25px;
-    margin-right: 15px;
-}
-.action span {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16.93px;
-    text-align: left;
-}
-.action a {
-    top: 125px;
-    left: 1018px;
-    gap: 0px;
-    border-radius: 11px;
-    border: 1px solid rgba(51, 146, 255, 1);
-    opacity: 0px;
-    margin: 10px 11px 11px 11px;
-    padding: 11px 14px;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16.93px;
-    text-align: left;
-    text-decoration: none;
-    color: black;
-}
 .main-header {
     text-align: center;
-    margin: 80px auto 0 auto;
     font-size: 36px;
     font-weight: 900;
     line-height: 43.2px;
@@ -135,28 +52,44 @@ body {
     font-size: 18px;
     font-weight: 500;
     line-height: 21.76px;
-    text-align: left;
-    width: 539px;
     justify-content: space-between;
     margin: 0 auto 0 auto;
 }
 .form-nav-item {
-    border-width: 0 0 3px 0;
-    border-style: solid;
+    padding: 3px 5px;
     border-color: rgb(227, 227, 227);
 }
-.form-nav-item:hover {
-    border-color: rgba(51, 146, 255, 1);
+
+.form-nav-item {
+    position: relative;
 }
+
+.form-nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 3px; /* Высота линии */
+    background-color: rgba(227, 227, 227, 1); /* Цвет в обычном состоянии */
+    border-radius: 10px; /* Скругление краев */
+}
+
+.form-nav-item:hover::after {
+    background-color: rgba(51, 146, 255, 1); /* Цвет при наведении */
+}
+
+
 .form-subnav {
     text-align: left;
     list-style: none;
     display: flex;
-    margin: 35px 0 0 0;
+    margin-top: 35px;
     align-items: center;
 }
 .subnav-item {
     padding-right: 15px;
+    padding-left: 3px;
     border-width: 0 0 3px 0;
     border-style: solid;
     border-color: rgb(227, 227, 227);
@@ -165,7 +98,6 @@ body {
     border-color: rgba(51, 146, 255, 1);
 }
 .input-container {
-    width: 210px;
     height: 42px;
     border: 1px solid #000;
     border-radius: 10px;
@@ -173,6 +105,7 @@ body {
     align-items: center;
     padding-left: 15px;
     box-sizing: border-box;
+    width: 14.4rem !important;
 }
 
 .input-container input {
@@ -181,6 +114,7 @@ body {
     font-size: 16px;
     width: 100%;
     margin-left: 5px;
+    gap: 6px;
 }
 
 .dropdown {
@@ -212,13 +146,7 @@ body {
     color: white;
     background: rgba(51, 146, 255, 1);
 }
-section {
-    width: 1061px;
-    margin: 0 auto;
-    display: flex;
-}
 .worldwide-avia {
-    width: 676px;
     height: 182px;
     gap: 0px;
     border-radius: 20px;
@@ -248,9 +176,9 @@ h3.ad {
 .worldwide-avia .text {
     width: 340px;
 }
+
 .mobile-app {
     padding: 43px;
-    width: 355px;
     height: 182px;
     left: 8px;
     gap: 0px;
@@ -286,12 +214,11 @@ h3.ad {
 .card {
     width: 336px;
     height: 276px;
-    gap: 0px;
-    border-radius: 20px;
+    border-radius: 20px !important;
     opacity: 0px;
-    background: rgba(51, 146, 255, 0.15);
-    box-sizing: border-box;
+    background: rgba(51, 146, 255, 0.15) !important;
     padding: 35px;
+    border-style: none !important;
 }
 .card h1 {
     margin-top: 23px;
@@ -328,11 +255,47 @@ h3.ad {
     flex-wrap: wrap;
 }
 .gallery-item {
-    display: flex;
-    margin-right: 15px;
     flex-direction: column;
     margin-top: 20px;
 }
 .gallery-item img {
     border-radius: 20px;
+}
+
+
+@media (max-width: 1200px) {
+    .input-container {
+        width: 11.6rem !important;
+    }
+}
+
+@media (max-width: 995px) {
+    .input-container {
+        width: 9.8rem !important;
+    }
+}
+@media (max-width: 768px) {
+    .input-container {
+        width: 14.4rem !important;
+    }
+}
+@media (max-width: 531px) {
+    .input-container {
+        width: 14rem !important;
+    }
+}
+@media (max-width: 520px) {
+    .input-container {
+        width: 100% !important;
+    }
+    .switch {
+        top: 2.1rem;
+        left: 0 !important;
+        width: 3rem !important;
+    }
+}
+@media (min-width: 1400px) {
+    .input-container {
+        width: 17rem !important;
+    }
 }
